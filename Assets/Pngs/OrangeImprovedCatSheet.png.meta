@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 3b735d5d84e230e4691ba27db8228855
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 796
+        width: 354
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8c6336e95c7e742bcd70ff078fa6a9
+      internalID: 1901516569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 796
+        width: 400
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff1e1867f80808448718de3133fab27
+      internalID: 78275362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_2
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 792
+        width: 353
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6800e1e3104c44b8a57264b06b1330
+      internalID: -1987163599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 804
+        width: 342
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9d66c9b8aa1584c8af8145640c47c4
+      internalID: -1183278149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 803
+        width: 343
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7761cf788d845a04f848416ac7a2535e
+      internalID: -718906716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 814
+        width: 357
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f548251cbe709d74ab46d696df439285
+      internalID: -655493241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 819
+        width: 363
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1914e358eb004c243861f19670321676
+      internalID: 682314035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 821
+        width: 359
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a517432f0df4bf04687d8879676722c9
+      internalID: -949877414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3229
+        y: 821
+        width: 366
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9621f622051324091f20483224f7c3
+      internalID: -46161667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_9
+      rect:
+        serializedVersion: 2
+        x: 3637
+        y: 816
+        width: 363
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27fe4bc5e5682a4b9c302aa55655163
+      internalID: -1092294455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_10
+      rect:
+        serializedVersion: 2
+        x: 4027
+        y: 811
+        width: 357
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46897768ba1b554c88c27d3d5b79227
+      internalID: 2055405318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_11
+      rect:
+        serializedVersion: 2
+        x: 4423
+        y: 818
+        width: 358
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fbf9b51c5723840b0591a5ab926959
+      internalID: -1217443010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 548
+        width: 374
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73491429b58ce1e458688e530c860dc9
+      internalID: -2024852975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_13
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 540
+        width: 364
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3986aa28f724154eb361b874f1f606f
+      internalID: -1046255659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_14
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 548
+        width: 363
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb8f1781ce710749a702f4033d403a6
+      internalID: -630006806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 555
+        width: 341
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7879512bfea644d8908af5d2c4c29f
+      internalID: 1115651551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 545
+        width: 339
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0454da439ca89429dd8b3d9cb61ac8
+      internalID: -1920617551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 535
+        width: 357
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a31b70052cd7d4fbab0f89d777d1fd
+      internalID: 1951034227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 540
+        width: 359
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66c8550f449c7a438214ff7af1a3550
+      internalID: 194601171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2926
+        y: 555
+        width: 376
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a790cfcceb5de84d81cc8f83668a410
+      internalID: 597278258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_20
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 575
+        width: 366
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fde23c47935294b96c3f408da50b1e
+      internalID: 393376781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_21
+      rect:
+        serializedVersion: 2
+        x: 3776
+        y: 572
+        width: 350
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7149e3c9f0b592d46963f65414df211b
+      internalID: 785319323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_22
+      rect:
+        serializedVersion: 2
+        x: 4181
+        y: 577
+        width: 334
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc727b92fb470374f96ab8b588239077
+      internalID: 2790655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_23
+      rect:
+        serializedVersion: 2
+        x: 4545
+        y: 565
+        width: 354
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093a6ea8eae001249bad57016c8f1218
+      internalID: -1278567787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 282
+        width: 366
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e6857014648d24b835e511fee1a196
+      internalID: 428256687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_25
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 274
+        width: 365
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c368cfadcdb590f44a9c42ca4c7d3731
+      internalID: -691464096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_26
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 277
+        width: 371
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0706e5edd924b4a40869b4208657be89
+      internalID: -1040072099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 277
+        width: 366
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1076aa4e758d834e89e2377eacdef61
+      internalID: 1437353124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 291
+        width: 361
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae10dbbeeddd2344abf5c432f291d3e
+      internalID: -1877474516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 296
+        width: 354
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d80c01b2a5d91488483e163f083264
+      internalID: -266563917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 306
+        width: 327
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01227443a25bf0947ace868630359126
+      internalID: -710698606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_31
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 318
+        width: 322
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c95ddba1844fea4b9454aa698b02930
+      internalID: -6953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_32
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 333
+        width: 329
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0b0a5fb7840f14ab408c551a93a63d
+      internalID: -212126445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_33
+      rect:
+        serializedVersion: 2
+        x: 3419
+        y: 348
+        width: 335
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a116cc5d77b3024493ffa4d96c468a6
+      internalID: 129924701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_34
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 365
+        width: 336
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed942332e35c934182bd6e2e7cbc436
+      internalID: 914398835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_35
+      rect:
+        serializedVersion: 2
+        x: 4191
+        y: 365
+        width: 333
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f3c306881f46946bbd51be783133b4
+      internalID: -497870871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_36
+      rect:
+        serializedVersion: 2
+        x: 4581
+        y: 345
+        width: 386
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034da7edef41771428cb5f3574ed1928
+      internalID: 163733347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 65
+        width: 360
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabd372a173e8fc41abfe4e2d57dd9cc
+      internalID: 1842195448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_38
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 55
+        width: 342
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea982960726cdea418b846a847370dcb
+      internalID: -845667208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_39
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 50
+        width: 344
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29be9264e918a842b2d100f176fbcdb
+      internalID: -426567516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 55
+        width: 340
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21c1938414c6f4418967b6358e11489
+      internalID: 2002949859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 67
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570289a593dca844ca02f6d25a5bf40d
+      internalID: -1214360431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeImprovedCatSheet_42
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 70
+        width: 268
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aed13f3e04d9974487bdefc8f5e8c70
+      internalID: 18301676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      OrangeImprovedCatSheet_2: -1987163599
+      OrangeImprovedCatSheet_29: -266563917
+      OrangeImprovedCatSheet_9: -1092294455
+      OrangeImprovedCatSheet_15: 1115651551
+      OrangeImprovedCatSheet_6: 682314035
+      OrangeImprovedCatSheet_11: -1217443010
+      OrangeImprovedCatSheet_33: 129924701
+      OrangeImprovedCatSheet_0: 1901516569
+      OrangeImprovedCatSheet_26: -1040072099
+      OrangeImprovedCatSheet_5: -655493241
+      OrangeImprovedCatSheet_14: -630006806
+      OrangeImprovedCatSheet_36: 163733347
+      OrangeImprovedCatSheet_42: 18301676
+      OrangeImprovedCatSheet_31: -6953
+      OrangeImprovedCatSheet_4: -718906716
+      OrangeImprovedCatSheet_1: 78275362
+      OrangeImprovedCatSheet_32: -212126445
+      OrangeImprovedCatSheet_30: -710698606
+      OrangeImprovedCatSheet_40: 2002949859
+      OrangeImprovedCatSheet_23: -1278567787
+      OrangeImprovedCatSheet_18: 194601171
+      OrangeImprovedCatSheet_37: 1842195448
+      OrangeImprovedCatSheet_27: 1437353124
+      OrangeImprovedCatSheet_34: 914398835
+      OrangeImprovedCatSheet_25: -691464096
+      OrangeImprovedCatSheet_35: -497870871
+      OrangeImprovedCatSheet_38: -845667208
+      OrangeImprovedCatSheet_28: -1877474516
+      OrangeImprovedCatSheet_41: -1214360431
+      OrangeImprovedCatSheet_24: 428256687
+      OrangeImprovedCatSheet_39: -426567516
+      OrangeImprovedCatSheet_21: 785319323
+      OrangeImprovedCatSheet_16: -1920617551
+      OrangeImprovedCatSheet_3: -1183278149
+      OrangeImprovedCatSheet_17: 1951034227
+      OrangeImprovedCatSheet_12: -2024852975
+      OrangeImprovedCatSheet_13: -1046255659
+      OrangeImprovedCatSheet_8: -46161667
+      OrangeImprovedCatSheet_10: 2055405318
+      OrangeImprovedCatSheet_22: 2790655
+      OrangeImprovedCatSheet_7: -949877414
+      OrangeImprovedCatSheet_20: 393376781
+      OrangeImprovedCatSheet_19: 597278258
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
