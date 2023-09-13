@@ -105,7 +105,8 @@ public class Typer : MonoBehaviour
             
             case typerWordType.pspsps:
                 currentWordType = typerWordType.pspsps;
-                SetRemainingWord("ps");
+                var rng3 = Random.Range(0, wordBank.ComeWords.Count);
+                SetRemainingWord(wordBank.ComeWords[rng3]);
                 break;
             default:
                 Debug.Log("Something's gone real wrong");
@@ -140,7 +141,7 @@ public class Typer : MonoBehaviour
             case typerWordType.pspsps:
                 Meters.Instance.ChangePace(pspspsPaceBonus);
                 Meters.Instance.ChangeFriskiness(pspspsFriskBonus);
-                SetRemainingWord("ps");
+                SetRemainingWord(wordBank.ComeWords[Random.Range(0, wordBank.ComeWords.Count)]);
                 break;
             
             case typerWordType.loveWords:
