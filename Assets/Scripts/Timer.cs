@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     {
         timeInSeconds -= Time.deltaTime;
 
-        timerText.text = TimeSpan.FromSeconds(timeInSeconds).ToString(@"mm\:ss");
+        timerText.text = "<mspace=0.45em>" + TimeSpan.FromSeconds(timeInSeconds).ToString(@"mm\:ss") + "</mspace>";
 
         if (timeInSeconds < 0)
         {

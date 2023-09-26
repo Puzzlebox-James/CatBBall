@@ -57,11 +57,13 @@ public class BallThrower : MonoBehaviour
         _ball.StartCoroutine(_ball.StuckCheck());
         _ball.Rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
         _ball.Rigidbody2D.AddForce(new Vector2(power/2, power/1.3f), ForceMode2D.Impulse);
+        _ball.Rigidbody2D.AddTorque(power);
 
         if (Meters.Instance.Friskiness >= 8)
         {
             _ball.Rigidbody2D.velocity = Vector2.zero;
             _ball.Rigidbody2D.AddForce(new Vector2(Random.Range(1, powerScaler), Random.Range(1, powerScaler)), ForceMode2D.Impulse);
+            _ball.Rigidbody2D.AddTorque(power);
             TyperManager.Instance.OnChange?.Invoke();
             TyperManager.Instance.OnFriskBallThrow?.Invoke(Typer.typerWordType.hurtWords);
             TyperManager.Instance.IsHurt = true;
