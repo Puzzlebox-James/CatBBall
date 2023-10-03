@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BallDestroyer9000
   - Make
+  - Ground
   layers:
   - Default
   - TransparentFX
