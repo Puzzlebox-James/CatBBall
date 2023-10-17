@@ -30,6 +30,7 @@ public class BallCreator : MonoBehaviour
             var spawnedBall = Instantiate(ballPrefab);
             activeBall = spawnedBall;
             ballThrower.Ball = spawnedBall;
+            StartCoroutine(ballThrower.FadeOutTheSlider(false));
         }
     }
 }

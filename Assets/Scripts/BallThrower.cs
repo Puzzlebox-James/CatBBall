@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class BallThrower : MonoBehaviour
 {
     [SerializeField] private Slider slider;
-    
+    private Image[] sliderImagesArray;
+
     [SerializeField] private float powerScaler;
     [SerializeField] private AnimationCurve curve;
 
@@ -21,15 +22,21 @@ public class BallThrower : MonoBehaviour
             _ball = value;
         }
     }
-    
-    
+
+
+    private void Start()
+    {
+        sliderImagesArray = slider.GetComponentsInChildren<Image>();
+    }
+
+
     void Update()
     {
         if (_ball == null)
         {
             slider.value = 0;
         }
-        
+
         if (!Input.GetKeyDown(KeyCode.Space)) return;
         if (_ball == null) return;
         if (_ball.IsLaunched) return;
@@ -48,6 +55,7 @@ public class BallThrower : MonoBehaviour
             yield return null;
         }
         LaunchBall(power * powerScaler);
+        StartCoroutine(FadeOutTheSlider(true));
         yield break;
     }
     
@@ -70,4 +78,33 @@ public class BallThrower : MonoBehaviour
         }
         Debug.Log("Launched with: " + power);
     }
+
+
+
+    public IEnumerator FadeOutTheSlider(bool isFadingOut)
+    {
+        if (isFadingOut) // fadeOUT
+        {
+            for (float i = 1; i >= 0; i -= Time.deltaTime)
+            {
+                foreach (Image j in sliderImagesArray)
+                {
+                    j.color = new Color(1, 1, 1, i);
+                }
+                yield return null;
+            }
+        }
+        else // fadeIN
+        {
+            for (float i = 0; i <= 1; i += Time.deltaTime)
+            {
+                foreach (Image j in sliderImagesArray)
+                {
+                    j.color = new Color(1, 1, 1, i);
+                }
+                yield return null;
+            }
+        }
+    }
+
 }
