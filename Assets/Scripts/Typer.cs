@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class Typer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI wordOutput;
+    [SerializeField] private Image wordBackground;
     [Space]
     [SerializeField] private float pspspsPaceBonus;
     [SerializeField] private float pspspsFriskBonus;
