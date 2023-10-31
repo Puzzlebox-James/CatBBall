@@ -10,6 +10,9 @@ public class Typer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI wordOutput;
     [SerializeField] private Image wordBackground;
+
+    [SerializeField] private Sprite[] wordBackgroundSprites;
+
     [Space]
     [SerializeField] private float pspspsPaceBonus;
     [SerializeField] private float pspspsFriskBonus;

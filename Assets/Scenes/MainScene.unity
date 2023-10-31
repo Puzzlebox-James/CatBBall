@@ -10768,6 +10768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordOutput: {fileID: 977429776}
   wordBackground: {fileID: 513383705}
+  wordBackgroundSprites:
+  - {fileID: 21300000, guid: 8ca84866fcf92dd4086086b2c1231446, type: 3}
+  - {fileID: 0}
   pspspsPaceBonus: 0.1
   pspspsFriskBonus: 0.1
   loveWordPaceBonus: 1
