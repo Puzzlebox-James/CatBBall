@@ -10770,7 +10770,13 @@ MonoBehaviour:
   wordBackground: {fileID: 513383705}
   wordBackgroundSprites:
   - {fileID: 21300000, guid: 8ca84866fcf92dd4086086b2c1231446, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 98d185a0bbee020489c6534c5895e358, type: 3}
+  - {fileID: 21300000, guid: 762634bc6e22ff441873314fe4a25cc9, type: 3}
+  - {fileID: 21300000, guid: a71cabcf006922f499ce121780b7c6bf, type: 3}
+  - {fileID: 21300000, guid: dd4ffff4d5b7633488221c458f57d792, type: 3}
+  - {fileID: 21300000, guid: f190ae6fa31d1ba4086282787ec62ca3, type: 3}
+  - {fileID: 21300000, guid: bdb54b5e4ef039645805a8ce0f94cbf0, type: 3}
+  - {fileID: 21300000, guid: 9d8ef8f94942dd44cb71a59b06e9d81a, type: 3}
   pspspsPaceBonus: 0.1
   pspspsFriskBonus: 0.1
   loveWordPaceBonus: 1
