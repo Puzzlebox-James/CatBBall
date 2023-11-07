@@ -14,6 +14,7 @@ public class BubbleChanger : MonoBehaviour
 
     [SerializeField] private AnimationCurve bubblePop;
     [SerializeField] private AnimationCurve bubbleFade;
+    [SerializeField] private AnimationCurve bubblePainPop;
 
 
     private bool isFadingBubble;
@@ -25,17 +26,19 @@ public class BubbleChanger : MonoBehaviour
     {
         TyperManager.Instance.OnBallPickedUp += SetBubble;
         TyperManager.Instance.OnBallRunBackSpawned += SetBubble;
-        TyperManager.Instance.OnFriskBallThrow += SetBubble;
+        TyperManager.Instance.OnFriskBallThrow += SetPainBubble;
+        TyperManager.Instance.OnPainBubbleChange += UpdatePainBubble;
         TyperManager.Instance.OnChange += ChangeBubbleTransition;
 
         startingWordBubbleRect = currentWordBackground.rectTransform.rect;
-
     }
+
     private void OnDisable()
     {
         TyperManager.Instance.OnBallPickedUp -= SetBubble;
         TyperManager.Instance.OnBallRunBackSpawned -= SetBubble;
-        TyperManager.Instance.OnFriskBallThrow -= SetBubble;
+        TyperManager.Instance.OnFriskBallThrow -= SetPainBubble;
+        TyperManager.Instance.OnPainBubbleChange -= UpdatePainBubble;
         TyperManager.Instance.OnChange -= ChangeBubbleTransition;
     }
 
@@ -50,10 +53,6 @@ public class BubbleChanger : MonoBehaviour
 
             case Typer.typerWordType.pspsps:
                 newWordBackground = normalBubble;
-                break;
-
-            case Typer.typerWordType.hurtWords:
-                newWordBackground = painBubbles[0];
                 break;
         }
     }
@@ -79,4 +78,30 @@ public class BubbleChanger : MonoBehaviour
         isFadingBubble = false;
     }
 
+
+
+    private void SetPainBubble(Typer.typerWordType typerWordType)
+    {
+        Debug.Log("SetPainBubble method entered from ball thrower invoke");
+        newWordBackground = painBubbles[0];
+        StartCoroutine(PainBubbleBounceAnimation());
+    }
+
+    private void UpdatePainBubble(int _remainingHurtWords)
+    {
+        newWordBackground = painBubbles[_remainingHurtWords];
+        StartCoroutine(PainBubbleBounceAnimation());
+    }
+
+    private IEnumerator PainBubbleBounceAnimation()
+    {
+        for (float i = 0; i <= .5f; i += Time.deltaTime)
+        {
+            currentWordBackground.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, bubblePainPop.Evaluate(i) * startingWordBubbleRect.width);
+            currentWordBackground.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, bubblePainPop.Evaluate(i) * startingWordBubbleRect.height);
+            if (newWordBackground != null) currentWordBackground.sprite = newWordBackground;
+            yield return null;
+        }
+        isFadingBubble = false;
+    }
 }

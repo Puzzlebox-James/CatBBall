@@ -25,4 +25,7 @@ public class TyperManager : MonoBehaviour
     
     // Invoked by: Ball, BallRunBack, BallThrower
     public Action OnChange;
+
+    // Invoked by: Typer
+    public Action<int> OnPainBubbleChange;
 }

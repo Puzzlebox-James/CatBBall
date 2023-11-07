@@ -74,7 +74,6 @@ public class BallThrower : MonoBehaviour
             _ball.Rigidbody2D.velocity = Vector2.zero;
             _ball.Rigidbody2D.AddForce(new Vector2(Random.Range(1, powerScaler), Random.Range(1, powerScaler)), ForceMode2D.Impulse);
             _ball.Rigidbody2D.AddTorque(power);
-            TyperManager.Instance.OnChange?.Invoke();
             TyperManager.Instance.OnFriskBallThrow?.Invoke(Typer.typerWordType.hurtWords);
             TyperManager.Instance.IsHurt = true;
         }

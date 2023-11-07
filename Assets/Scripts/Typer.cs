@@ -156,11 +156,12 @@ public class Typer : MonoBehaviour
                     var rng = Random.Range(0, wordBank.HurtWords.Count);
                     SetRemainingWord(wordBank.HurtWords[rng]);
                     _remainingHurtWords -= 1;
+                    TyperManager.Instance.OnPainBubbleChange?.Invoke(_remainingHurtWords);
                     Meters.Instance.ChangeFriskiness(hurtWordFriskBonus);
                     return;
                 }
                 TyperManager.Instance.IsHurt = false;
-                TyperManager.Instance.OnChange?.Invoke();
+                TyperManager.Instance.OnChange?.Invoke(); // WE ARE DOING NOTHING AFTER WE SAVE THEM SO ADD SOME STUFF
                 TyperManager.Instance.OnBallPickedUp?.Invoke(Typer.typerWordType.loveWords);
 
                 if (FindObjectOfType<BallRunBack>() == null && FindObjectOfType<Ball>() == null)
