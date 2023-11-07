@@ -43,6 +43,7 @@ public class BallThrower : MonoBehaviour
         StartCoroutine(DeterminePower());
     }
 
+
     
     private IEnumerator DeterminePower()
     {
@@ -59,6 +60,7 @@ public class BallThrower : MonoBehaviour
         yield break;
     }
     
+
     private void LaunchBall(float power)
     {
         _ball.IsLaunched = true;

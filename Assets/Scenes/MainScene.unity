@@ -10679,6 +10679,7 @@ GameObject:
   - component: {fileID: 2139888652}
   - component: {fileID: 2139888654}
   - component: {fileID: 2139888655}
+  - component: {fileID: 2139888657}
   - component: {fileID: 2139888656}
   m_Layer: 0
   m_Name: ScriptHolder
@@ -10767,10 +10768,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordOutput: {fileID: 977429776}
-  wordBackground: {fileID: 513383705}
-  wordBackgroundSprites:
-  - {fileID: 21300000, guid: 8ca84866fcf92dd4086086b2c1231446, type: 3}
-  - {fileID: 0}
   pspspsPaceBonus: 0.1
   pspspsFriskBonus: 0.1
   loveWordPaceBonus: 1
@@ -10843,6 +10840,112 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1760917946}
+--- !u!114 &2139888657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139888647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096dd0b4e5095a548b69141f9cdae8b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWordBackground: {fileID: 513383705}
+  loveBubble: {fileID: 21300000, guid: 98d185a0bbee020489c6534c5895e358, type: 3}
+  normalBubble: {fileID: 21300000, guid: 8ca84866fcf92dd4086086b2c1231446, type: 3}
+  painBubbles:
+  - {fileID: 21300000, guid: 762634bc6e22ff441873314fe4a25cc9, type: 3}
+  - {fileID: 21300000, guid: a71cabcf006922f499ce121780b7c6bf, type: 3}
+  - {fileID: 21300000, guid: dd4ffff4d5b7633488221c458f57d792, type: 3}
+  - {fileID: 21300000, guid: f190ae6fa31d1ba4086282787ec62ca3, type: 3}
+  - {fileID: 21300000, guid: bdb54b5e4ef039645805a8ce0f94cbf0, type: 3}
+  - {fileID: 21300000, guid: 9d8ef8f94942dd44cb71a59b06e9d81a, type: 3}
+  bubblePop:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.75111806
+      outSlope: -0.75111806
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6281217
+      value: 0.52820647
+      inSlope: 1.2950549
+      outSlope: 1.2950549
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8449692
+      value: 1.2527435
+      inSlope: -1.365785
+      outSlope: -1.365785
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.91734594
+      value: 0.81321424
+      inSlope: -1.906474
+      outSlope: -1.906474
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2.2598498
+      outSlope: 2.2598498
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  bubbleFade:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: -0.43405986
+      outSlope: -0.43405986
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.41789502
+      outSlope: -0.41789502
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.19754824
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
