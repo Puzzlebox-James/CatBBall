@@ -6527,7 +6527,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -10680,6 +10680,7 @@ GameObject:
   - component: {fileID: 2139888654}
   - component: {fileID: 2139888655}
   - component: {fileID: 2139888657}
+  - component: {fileID: 2139888658}
   - component: {fileID: 2139888656}
   m_Layer: 0
   m_Name: ScriptHolder
@@ -10857,11 +10858,11 @@ MonoBehaviour:
   normalBubble: {fileID: 21300000, guid: 8ca84866fcf92dd4086086b2c1231446, type: 3}
   painBubbles:
   - {fileID: 21300000, guid: 762634bc6e22ff441873314fe4a25cc9, type: 3}
-  - {fileID: 21300000, guid: a71cabcf006922f499ce121780b7c6bf, type: 3}
-  - {fileID: 21300000, guid: dd4ffff4d5b7633488221c458f57d792, type: 3}
-  - {fileID: 21300000, guid: f190ae6fa31d1ba4086282787ec62ca3, type: 3}
-  - {fileID: 21300000, guid: bdb54b5e4ef039645805a8ce0f94cbf0, type: 3}
   - {fileID: 21300000, guid: 9d8ef8f94942dd44cb71a59b06e9d81a, type: 3}
+  - {fileID: 21300000, guid: bdb54b5e4ef039645805a8ce0f94cbf0, type: 3}
+  - {fileID: 21300000, guid: f190ae6fa31d1ba4086282787ec62ca3, type: 3}
+  - {fileID: 21300000, guid: dd4ffff4d5b7633488221c458f57d792, type: 3}
+  - {fileID: 21300000, guid: a71cabcf006922f499ce121780b7c6bf, type: 3}
   bubblePop:
     serializedVersion: 2
     m_Curve:
@@ -10979,6 +10980,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2139888658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139888647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d5d4e35c15c38409aa1a92d7f79616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bloodParticleSystem: {fileID: 2040084413}
+  _healedParticleSystem: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

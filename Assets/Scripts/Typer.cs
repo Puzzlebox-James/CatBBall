@@ -99,9 +99,10 @@ public class Typer : MonoBehaviour
             
             case typerWordType.hurtWords:
                 currentWordType = typerWordType.hurtWords;
-                _remainingHurtWords = 4;
+                _remainingHurtWords = 5;
                 var rng2 = Random.Range(0, wordBank.HurtWords.Count);
                 SetRemainingWord(wordBank.HurtWords[rng2]);
+                ParticleHandler.Instance.ToggleBlood();
                 break;
             
             case typerWordType.pspsps:
@@ -155,11 +156,12 @@ public class Typer : MonoBehaviour
                 {
                     var rng = Random.Range(0, wordBank.HurtWords.Count);
                     SetRemainingWord(wordBank.HurtWords[rng]);
-                    _remainingHurtWords -= 1;
                     TyperManager.Instance.OnPainBubbleChange?.Invoke(_remainingHurtWords);
+                    _remainingHurtWords -= 1;
                     Meters.Instance.ChangeFriskiness(hurtWordFriskBonus);
                     return;
                 }
+                ParticleHandler.Instance.ToggleBlood();
                 TyperManager.Instance.IsHurt = false;
                 TyperManager.Instance.OnChange?.Invoke(); // WE ARE DOING NOTHING AFTER WE SAVE THEM SO ADD SOME STUFF
                 TyperManager.Instance.OnBallPickedUp?.Invoke(Typer.typerWordType.loveWords);
