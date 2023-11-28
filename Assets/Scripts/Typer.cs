@@ -149,6 +149,7 @@ public class Typer : MonoBehaviour
             case typerWordType.loveWords:
                 Meters.Instance.ChangePace(loveWordPaceBonus);
                 Meters.Instance.ChangeFriskiness(loveWordFriskBonus);
+                TyperManager.Instance.OnLoveWordComplete();
                 break;
             
             case typerWordType.hurtWords:
@@ -163,7 +164,8 @@ public class Typer : MonoBehaviour
                 }
                 ParticleHandler.Instance.ToggleBlood();
                 TyperManager.Instance.IsHurt = false;
-                TyperManager.Instance.OnChange?.Invoke(); // WE ARE DOING NOTHING AFTER WE SAVE THEM SO ADD SOME STUFF
+                TyperManager.Instance.OnChange?.Invoke(); 
+                ParticleHandler.Instance.PlayHealed(); // Heal particle
                 TyperManager.Instance.OnBallPickedUp?.Invoke(Typer.typerWordType.loveWords);
 
                 if (FindObjectOfType<BallRunBack>() == null && FindObjectOfType<Ball>() == null)

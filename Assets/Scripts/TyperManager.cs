@@ -28,4 +28,7 @@ public class TyperManager : MonoBehaviour
 
     // Invoked by: Typer
     public Action<int> OnPainBubbleChange;
+
+    // Invoked by: Typer
+    public Action OnLoveWordComplete;
 }

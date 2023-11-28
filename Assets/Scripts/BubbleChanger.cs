@@ -18,6 +18,7 @@ public class BubbleChanger : MonoBehaviour
 
 
     private bool isFadingBubble;
+    private bool isFadedOut;
     private Rect startingWordBubbleRect;
     private Sprite newWordBackground;
 
@@ -29,6 +30,7 @@ public class BubbleChanger : MonoBehaviour
         TyperManager.Instance.OnFriskBallThrow += SetPainBubble;
         TyperManager.Instance.OnPainBubbleChange += UpdatePainBubble;
         TyperManager.Instance.OnChange += ChangeBubbleTransition;
+        TyperManager.Instance.OnLoveWordComplete += HideLoveBubble;
 
         startingWordBubbleRect = currentWordBackground.rectTransform.rect;
     }
@@ -40,6 +42,7 @@ public class BubbleChanger : MonoBehaviour
         TyperManager.Instance.OnFriskBallThrow -= SetPainBubble;
         TyperManager.Instance.OnPainBubbleChange -= UpdatePainBubble;
         TyperManager.Instance.OnChange -= ChangeBubbleTransition;
+        TyperManager.Instance.OnLoveWordComplete -= HideLoveBubble;
     }
 
 
@@ -62,7 +65,9 @@ public class BubbleChanger : MonoBehaviour
     {
         if (isFadingBubble) return;
         isFadingBubble = true;
-        StartCoroutine(FadeBubbleInAndOut());
+        if (isFadedOut)
+            StartCoroutine(FadeIn());
+        else { StartCoroutine(FadeBubbleInAndOut()); }
     }
 
     private IEnumerator FadeBubbleInAndOut()
@@ -78,6 +83,35 @@ public class BubbleChanger : MonoBehaviour
         isFadingBubble = false;
     }
 
+
+    private void HideLoveBubble()
+    {
+        StartCoroutine(FadeLoveBubble());
+        isFadingBubble = true;
+    }
+
+    private IEnumerator FadeLoveBubble()
+    {
+        for (float i = 1; i > 0; i -= Time.deltaTime)
+        {
+            currentWordBackground.color = new Color(1, 1, 1, i);
+            yield return null;
+        }
+        isFadingBubble = false;
+        isFadedOut = true;
+    }
+
+    private IEnumerator FadeIn()
+    {
+        for (float i = 0; i <= 1; i += Time.deltaTime)
+        {
+            if (i > 0) currentWordBackground.sprite = newWordBackground;
+            currentWordBackground.color = new Color(1, 1, 1, i);
+            yield return null;
+        }
+        isFadingBubble = false;
+        isFadedOut = false;
+    }
 
 
     private void SetPainBubble(Typer.typerWordType typerWordType)

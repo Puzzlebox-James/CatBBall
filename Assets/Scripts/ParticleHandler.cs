@@ -23,4 +23,9 @@ public class ParticleHandler : MonoBehaviour
         else _bloodEmisMod.enabled = true;
     }
 
+    public void PlayHealed()
+    {
+        _healedParticleSystem.Play();
+    }
+
 }
