@@ -87,18 +87,16 @@ public class BubbleChanger : MonoBehaviour
     private void HideLoveBubble()
     {
         StartCoroutine(FadeLoveBubble());
-        isFadingBubble = true;
     }
 
     private IEnumerator FadeLoveBubble()
     {
+        isFadedOut = true;
         for (float i = 1; i > 0; i -= Time.deltaTime)
         {
             currentWordBackground.color = new Color(1, 1, 1, i);
             yield return null;
         }
-        isFadingBubble = false;
-        isFadedOut = true;
     }
 
     private IEnumerator FadeIn()
@@ -117,7 +115,8 @@ public class BubbleChanger : MonoBehaviour
     private void SetPainBubble(Typer.typerWordType typerWordType)
     {
         Debug.Log("SetPainBubble method entered from ball thrower invoke");
-        newWordBackground = painBubbles[0];
+        isFadingBubble = true;
+        newWordBackground = painBubbles[5]; // eww hack
         StartCoroutine(PainBubbleBounceAnimation());
     }
 
@@ -136,6 +135,7 @@ public class BubbleChanger : MonoBehaviour
             if (newWordBackground != null) currentWordBackground.sprite = newWordBackground;
             yield return null;
         }
+        currentWordBackground.color = new Color(1,1,1,1);
         isFadingBubble = false;
     }
 }

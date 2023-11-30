@@ -116,9 +116,7 @@ public class WordBanks
         "assemble",
         "contact",
         "request",
-        "convoke",
-        ""
-        
+        "convoke",        
     };
 
     public readonly List<string> HurtWords = new List<string>()
