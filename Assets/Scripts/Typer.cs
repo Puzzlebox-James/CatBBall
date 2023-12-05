@@ -143,6 +143,7 @@ public class Typer : MonoBehaviour
             case typerWordType.pspsps:
                 Meters.Instance.ChangePace(pspspsPaceBonus);
                 Meters.Instance.ChangeFriskiness(pspspsFriskBonus);
+                ParticleHandler.Instance.PlayWordCompleted();
                 SetRemainingWord(wordBank.ComeWords[Random.Range(0, wordBank.ComeWords.Count)]);
                 break;
             

@@ -15,6 +15,7 @@ public class ParticleHandler : MonoBehaviour
 
     [SerializeField] private ParticleSystem _bloodParticleSystem;
     [SerializeField] private ParticleSystem _healedParticleSystem;
+    [SerializeField] private ParticleSystem _completedWordParticleSystem;
 
     public void ToggleBlood()
     {
@@ -28,4 +29,8 @@ public class ParticleHandler : MonoBehaviour
         _healedParticleSystem.Play();
     }
 
+    public void PlayWordCompleted()
+    {
+        _completedWordParticleSystem.Play();
+    }
 }
