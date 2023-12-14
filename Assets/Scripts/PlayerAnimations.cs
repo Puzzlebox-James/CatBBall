@@ -6,30 +6,68 @@ public class PlayerAnimations : MonoBehaviour
 {
     private Animator _playerAnimator;
 
-    void Start()
+    private void Start()
     {
         _playerAnimator = GetComponent<Animator>();
 
-        TyperManager.Instance.OnBallPickedUp += BallPickUpAnimationPlay;
-        //TyperManager.Instance.OnBallRunBackSpawned += SetBubble;
-        //TyperManager.Instance.OnFriskBallThrow += SetPainBubble;
-        //TyperManager.Instance.OnPainBubbleChange += UpdatePainBubble;
+        TyperManager.Instance.OnBallPickedUpAnimation += BallPickUpAnimationPlay;
+        TyperManager.Instance.OnBallReachedHurtPlayer += BallThrowableAnimationStateSet;
+        TyperManager.Instance.OnNormalBallThrow += BallThrowNormalAnimationPlay;
+        TyperManager.Instance.OnHurtBallThrowAnimation += BallThrownHurtAnimationPlay;
+        TyperManager.Instance.OnBallRunBackSpawned += BallRunbackCrouchAnimationPlay;
+        TyperManager.Instance.OnHealedAnimations += HealedAnimationPlay;
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
-        TyperManager.Instance.OnBallPickedUp -= BallPickUpAnimationPlay;
-        //TyperManager.Instance.OnBallRunBackSpawned -= SetBubble;
-        //TyperManager.Instance.OnFriskBallThrow -= SetPainBubble;
-       //TyperManager.Instance.OnPainBubbleChange -= UpdatePainBubble;
+        TyperManager.Instance.OnBallPickedUpAnimation -= BallPickUpAnimationPlay;
+        TyperManager.Instance.OnBallReachedHurtPlayer -= BallThrowableAnimationStateSet;
+        TyperManager.Instance.OnNormalBallThrow -= BallThrowNormalAnimationPlay;
+        TyperManager.Instance.OnHurtBallThrowAnimation -= BallThrownHurtAnimationPlay;
+        TyperManager.Instance.OnBallRunBackSpawned += BallRunbackCrouchAnimationPlay;
+        TyperManager.Instance.OnHealedAnimations -= HealedAnimationPlay;
     }
 
 
-    void BallPickUpAnimationPlay(Typer.typerWordType type)
+
+    private void BallPickUpAnimationPlay()
     {
-        _playerAnimator.ResetTrigger("BallThrowable");
-        _playerAnimator.SetTrigger("BallThrowable");
+        _playerAnimator.SetBool("BallThrowable", true);
+        _playerAnimator.ResetTrigger("BallReachedPlayer");
+        _playerAnimator.SetTrigger("BallReachedPlayer");
     }
 
+    private void BallThrowableAnimationStateSet()
+    {
+        _playerAnimator.SetBool("BallThrowable", true);
+    }
+
+    private void BallThrowNormalAnimationPlay()
+    {
+        _playerAnimator.SetBool("BallThrowable", false);
+        _playerAnimator.ResetTrigger("BallLaunched");
+        _playerAnimator.SetTrigger("BallLaunched");
+    }
+
+    private void BallThrownHurtAnimationPlay()
+    {
+        _playerAnimator.SetBool("BallThrowable", false);
+        _playerAnimator.ResetTrigger("BallLaunchedHurt");
+        _playerAnimator.SetTrigger("BallLaunchedHurt");
+    }
+
+
+    private void BallRunbackCrouchAnimationPlay(Typer.typerWordType junk)
+    {
+        _playerAnimator.ResetTrigger("BallReachedGround");
+        _playerAnimator.SetTrigger("BallReachedGround");
+    }
+
+
+    private void HealedAnimationPlay()
+    {
+        _playerAnimator.ResetTrigger("HurtCured");
+        _playerAnimator.SetTrigger("HurtCured");
+    }
 
 }

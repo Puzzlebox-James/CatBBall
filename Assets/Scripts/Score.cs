@@ -15,6 +15,7 @@ public class Score : MonoBehaviour
     }
 
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI highScoreText;
     
     public int ScoreInt { get; private set; }
 
@@ -26,5 +27,13 @@ public class Score : MonoBehaviour
             ScoreInt += 3;
         
         scoreText.text = ScoreInt.ToString();
+    }
+
+
+    private void Update()
+    {
+        if (ScoreInt > HighScore.HighScoreInt)
+            HighScore.HighScoreInt = ScoreInt;
+        highScoreText.text = HighScore.HighScoreInt.ToString();
     }
 }

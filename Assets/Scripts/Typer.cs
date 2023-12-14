@@ -167,6 +167,7 @@ public class Typer : MonoBehaviour
                 TyperManager.Instance.IsHurt = false;
                 TyperManager.Instance.OnChange?.Invoke(); 
                 ParticleHandler.Instance.PlayHealed(); // Heal particle
+                TyperManager.Instance.OnHealedAnimations?.Invoke();
                 TyperManager.Instance.OnBallPickedUp?.Invoke(Typer.typerWordType.loveWords);
 
                 if (FindObjectOfType<BallRunBack>() == null && FindObjectOfType<Ball>() == null)

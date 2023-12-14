@@ -31,6 +31,7 @@ public class BallCreator : MonoBehaviour
             activeBall = spawnedBall;
             ballThrower.Ball = spawnedBall;
             StartCoroutine(ballThrower.FadeOutTheSlider(false));
+            spawnedBall.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

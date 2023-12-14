@@ -55,15 +55,30 @@ public class BallThrower : MonoBehaviour
             slider.value = power;
             yield return null;
         }
-        LaunchBall(power * powerScaler);
+
+        StartCoroutine(StartLaunchSequence(power * powerScaler));
         StartCoroutine(FadeOutTheSlider(true));
         yield break;
     }
     
+    private IEnumerator StartLaunchSequence(float power)
+    {
+        _ball.IsLaunched = true;
+
+        if (Meters.Instance.Friskiness >= 8)
+        {
+            TyperManager.Instance.OnHurtBallThrowAnimation.Invoke();
+        } else{
+            TyperManager.Instance.OnNormalBallThrow.Invoke();
+        }
+
+        yield return new WaitForSeconds(0.3f);
+        _ball.GetComponent<SpriteRenderer>().enabled = true;
+        LaunchBall(power);
+    }
 
     private void LaunchBall(float power)
     {
-        _ball.IsLaunched = true;
         _ball.StartCoroutine(_ball.StuckCheck());
         _ball.Rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
         _ball.Rigidbody2D.AddForce(new Vector2(power/2, power/1.3f), ForceMode2D.Impulse);

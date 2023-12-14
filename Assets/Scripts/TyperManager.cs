@@ -14,14 +14,26 @@ public class TyperManager : MonoBehaviour
         Instance = this;
     }
     
-    // Invoked by: BallRunBack
+    // Invoked by: BallRunBack, Typer
     public Action<Typer.typerWordType> OnBallPickedUp;
+
+    // Invoked by: BallRunBack
+    public Action OnBallPickedUpAnimation;
+
+    // Invoked by: BallRunBack
+    public Action OnBallReachedHurtPlayer;
 
     // Invoked by: Ball
     public Action<Typer.typerWordType> OnBallRunBackSpawned;
 
     // Invoked by: BallThrower
     public Action<Typer.typerWordType> OnFriskBallThrow;
+
+    // Invoked by: BallThrower
+    public Action OnHurtBallThrowAnimation;
+
+    // Invoked by: BallThrower
+    public Action OnNormalBallThrow;
     
     // Invoked by: Ball, BallRunBack, BallThrower
     public Action OnChange;
@@ -31,4 +43,7 @@ public class TyperManager : MonoBehaviour
 
     // Invoked by: Typer
     public Action OnLoveWordComplete;
+
+    //Invoked by: Typer
+    public Action OnHealedAnimations;
 }

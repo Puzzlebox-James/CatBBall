@@ -47,11 +47,14 @@ public class BallRunBack : MonoBehaviour
                 Debug.Log("We should wait");
                 // TyperManager.Instance.OnChange?.Invoke();
                 // TyperManager.Instance.OnBallPickedUp?.Invoke(Typer.typerWordType.hurtWords);
+                // We do this stuff in typer now cause caveman programmer
+                TyperManager.Instance.OnBallReachedHurtPlayer?.Invoke();
                 return;
             }
             BallCreator.Instance.SpawnBall();
             TyperManager.Instance.OnChange?.Invoke();
             TyperManager.Instance.OnBallPickedUp?.Invoke(Typer.typerWordType.loveWords);
+            TyperManager.Instance.OnBallPickedUpAnimation?.Invoke();
         }
     }
 }
