@@ -51,7 +51,7 @@ public class BallThrower : MonoBehaviour
         var power = 0f;
         while (Input.GetKey(KeyCode.Space))
         {
-            power = curve.Evaluate(Mathf.PingPong((Time.time - startPressedTime), 1));
+            power = curve.Evaluate(Mathf.PingPong((Time.time - startPressedTime)/1.5f, 1));
             slider.value = power;
             yield return null;
         }
